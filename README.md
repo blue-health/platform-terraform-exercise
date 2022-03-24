@@ -23,7 +23,7 @@ networks
     └── vpc
 ```
 
-The project configures a VPC (Virtual Private Cloud) network for some larger infrastructure. It defines the shared Terraform module `vpc` where most of the network configuration code lives, and the `development` environment where an instance of this network is created for the development environment.
+The project configures a VPC (Virtual Private Cloud) network for some larger infrastructure. It defines a Terraform module `vpc` where most of the shared VPC network configuration code lives, and the `development` environment where an instance of this network is created for the development environment.
 
 Your task is to read the code carefully, and then:
 1. Explain which infrastructure components are provisioned by this code, and what is their function. You can annotate Terraform modules/resources/data if you wish to.

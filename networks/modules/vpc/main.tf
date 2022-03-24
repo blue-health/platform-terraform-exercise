@@ -38,7 +38,7 @@ locals {
 }
 
 /******************************************
-  Shared VPC configuration
+  VPC configuration
  *****************************************/
 
 module "main" {
@@ -48,7 +48,7 @@ module "main" {
   network_name                           = local.network_name
   shared_vpc_host                        = true
   delete_default_internet_gateway_routes = true
-  description                            = "The ${var.env} base shared VPC in ${var.region}"
+  description                            = "The ${var.env} VPC in ${var.region}"
 
   subnets          = local.subnets
   secondary_ranges = local.secondary_ranges
