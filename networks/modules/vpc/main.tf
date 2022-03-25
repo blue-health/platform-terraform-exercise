@@ -23,7 +23,6 @@ locals {
     subnet_ip             = config.subnet_ip
     subnet_region         = config.subnet_region
     subnet_private_access = config.subnet_private_access
-    subnet_flow_logs      = tostring(var.subnetworks_enable_logging)
     description           = "A ${var.env} subnet in ${var.region} for ${name}."
   }]
   secondary_ranges = {
