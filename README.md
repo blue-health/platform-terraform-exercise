@@ -39,5 +39,6 @@ Your task is to read the code carefully, and then:
 2. Give an overview of the firewall configuration - what connections are allowed, when etc.
 3. Finish the example configuration of `locals{}` in `networks/envs/development/main.tf`. You can also adjust variables in `networks/envs/development/terraform.tfvars` if you would like to.
 4. Explain precisely which infrastructure components will be provisioned after your changes.
+5. (Optional) Implement a Cloud NAT Gateway in the VPC network. The NAT gateway should expose one public IP address that will be used for communication with the Internet. Please take a look at the [terraform-google-modules/cloud-router/google](https://registry.terraform.io/modules/terraform-google-modules/cloud-router/google/latest) module for hints.
 
 The answers don't need to be very elaborate, they should show your understanding of the infrastructure components, and how to provision them with Terraform.
